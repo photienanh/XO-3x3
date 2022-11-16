@@ -4,11 +4,15 @@ using namespace std;
 char space[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 //create render
 void render(){
-    cout<<space[0][0]<<" |"<<space[0][1]<<" |"<<space[0][2]<<"  "<<endl;
-    cout<<"__|__|__"<<endl;
-    cout<<space[1][0]<<" |"<<space[1][1]<<" |"<<space[1][2]<<"  "<<endl;
-    cout<<"__|__|__"<<endl;
-    cout<<space[2][0]<<" |"<<space[2][1]<<" |"<<space[2][2]<<"  "<<endl;
+     cout<<"-------------"<<endl;
+              for(int i=0;i<3;i++){
+                cout<<"| ";
+                for(int j=0;j<3;j++){
+                    cout<<space[i][j]<<" | ";
+                }
+                cout<<endl<<"-------------"<<endl;
+                
+              }                                                                                                
 }
 //get whose next turn
 char nextPlayer(){
