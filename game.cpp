@@ -60,7 +60,7 @@ int checkEnd(){
     }
     return 0;//draw
 }
-//enter X or O in the state
+//select your move
 void playgame(char n){
     for(int i=0;i<3;i++){
         for(int j=0;j<3;j++){
