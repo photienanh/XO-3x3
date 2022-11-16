@@ -41,7 +41,6 @@ int checkEnd(){
     if(space[0][0]==space[1][1]&&space[0][0]==space[2][2]&&space[0][0]=='X') return 1;
     if(space[0][2]==space[1][1]&&space[0][2]==space[2][0]&&space[2][0]=='X') return 1;
     /*O win*/
-    /*X win*/
     //Row
     for(int i=0;i<3;i++){
         if(space[i][0]==space[i][1]&&space[i][0]==space[i][2]&&space[i][0]=='O') return 2;
