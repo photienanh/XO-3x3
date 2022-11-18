@@ -64,9 +64,8 @@ int checkEnd(){
 void playgame(char n){
     for(int i=0;i<3;i++){
         for(int j=0;j<3;j++){
-            if(board[i][j]==n){
-                if(nextPlayer()=='X') board[i][j]='X';
-                else if(nextPlayer()=='O') board[i][j]='O';
+            if (board[i][j]==n){
+                board[i][j]=nextPlayer();
             }
         }
     }
